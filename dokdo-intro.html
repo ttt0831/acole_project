@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kyungsung Univ.</title>
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+      li {
+        list-style: none;
+      }
+      .picture {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .picture li {
+        float: left;
+        width: 50%;
+      }
+      .picture li a {
+        display: block;
+        margin: 5px;
+        border: 1px;
+      }
+      .picture li img {
+        display: block;
+        width: 50%;
+        height: auto;
+      }
+      .picture li img:hover {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .ui-header {
+        background-color: #ffa600;
+      }
+      .ui-header .ui-title {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div data-theme="a">
+      <div data-role="page" id="home">
+        <div data-role="header" data-theme="a">
+          <h1>경성대학교</h1>
+        </div>
+        <div data-role="content" style="text-align: center">
+          <img src="kyungsung.png" />
+          <ul data-role="listview" data-inset="true">
+            <li><a href="#intro">경성대학교 소개</a></li>
+            <li><a href="#movie" data-rel="dialog">경성대학교 영상</a></li>
+            <li><a href="#wizard3-1" data-rel="dialog">경성대학교 교가</a></li>
+            <li><a href="#gallery">경성대학교 사진</a></li>
+          </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+          <h1>소프트웨어학과 2020575045 이은정</h1>
+        </div>
+      </div>
+
+      <div data-role="page" id="intro" data-theme="a">
+        <div data-role="header" data-theme="a">
+          <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+          <!--arrow-l 왼쪽 arrow-r 오른쪽  -->
+          <h1>경성대학교 소개</h1>
+        </div>
+        <div data-role="content">
+          <div style="text-align: center">
+            <img src="kyungsung2.png" />
+          </div>
+          <div
+            data-role="collapsible-set"
+            data-theme="a"
+            data-content-theme="e"
+          >
+            <div data-role="collapsible" data-collapsed="false">
+              <h3>역사</h3>
+              <p>
+                1955년 3월 22일에 목사 김길창에 의해 경남사범대숙으로 설립
+                인가를 받아, 그해 6월 30일에 서대신동 3가 184번지에서
+                개교하였다. 개교 당시 야간부 4년제로 국어국문학과, 영어
+                영문학과, 수학과, 가정학과 등 4개 학과를 개설하였으며, 초대
+                학장으로 목사 김길창이 취임하였다. 1963년 1월 28일에
+                한성여자실업초급대학으로 개편 인가를 받아 음악과, 미술과,
+                체육과, 보육과 등 4개 학과를 개편한 뒤, 중구 대청동 1가 9번지로
+                교사를 이전하였다. 같은 해 4월 30일에 경남대학교육원에서
+                한성학원으로 재단명을 변경하였으며, 그해 12월 16일에 2부[야간]
+                의상과, 음악과, 보육과를 신설하였다. 1966년 4월 21일에는 영도구
+                영선동의 신교사로 이전하였다. 1973년 1월 20일에 현 캠퍼스인 남구
+                대연동으로 이전하였으며, 1979년 1월 10일에 4년제 대학으로 개편
+                인가를 받아 부산산업대학으로 교명을 변경하였다. 1983년 9월 8일에
+                종합 대학교로 개편 인가를 받았고, 1988년 5월 1일에 경성대학교로
+                교명을 변경하였다.
+              </p>
+            </div>
+            <div data-role="collapsible">
+              <h3>교육목표</h3>
+              <p>융합 지식 / 공감 인성 / 창의 감성을 갖춘 참된 인재 양성</p>
+            </div>
+            <div data-role="collapsible">
+              <h3>주소</h3>
+              <p>(우) 608-736 부산광역시 남구 수영로 309 (대연동) 경성대학교</p>
+            </div>
+          </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+          <h1>소프트웨어학과 2020575045 이은정</h1>
+        </div>
+      </div>
+
+      <div data-role="page" id="movie" data-theme="a">
+        <div data-role="header" data-position="fixed" data-theme="a">
+          <h1>경성대학교 영상</h1>
+        </div>
+        <div data-role="content">
+          <div class="ui-bar ui-bar-a">경성대 15초 소개 동영상</div>
+          <br />
+          <li>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/b6GcP1m5TWY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </li>
+          <br />
+          <div class="ui-bar ui-bar-a">경성대 특별 교육과정 'Cell'</div>
+          <br />
+          <li>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/aGm8jMs9mLA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </li>
+          <br />
+        </div>
+        <div data-role="footer" data-theme="a"></div>
+      </div>
+
+      <div data-role="page" id="wizard3-1">
+        <div data-role="header">
+          <h1>경성대학교 교가</h1>
+        </div>
+        <div data-role="content">
+          <div class="ui-bar ui-bar-e">교가</div>
+          <br />
+          <audio controls width="100%" preload="metadata">
+            <source src="kyungsung4.mp3" type="audio/mp3" />
+          </audio>
+          <img src="kyungsung3.png" alt="" width="100%" />
+        </div>
+      </div>
+
+      <div data-role="page" id="gallery" data-theme="a">
+        <div data-role="header" data-position="fixed" data-theme="a">
+          <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+          <h1>힐링장소 & 시험공부장소</h1>
+        </div>
+        <div data-role="content">
+          <ul class="picture">
+            <li>
+              <a href="1.jpg" rel="external"><img src="1.jpg" /></a>
+            </li>
+            <li>
+              <a href="2.jpg" rel="external"><img src="2.jpg" /></a>
+            </li>
+            <li>
+              <a href="3.jpg" rel="external"><img src="3.jpg" /></a>
+            </li>
+            <li>
+              <a href="4.jpg" rel="external"><img src="4.jpg" /></a>
+            </li>
+            <li>
+              <a href="5.jpg" rel="external"><img src="5.jpg" /></a>
+            </li>
+            <li>
+              <a href="6.jpg" rel="external"><img src="6.jpg" /></a>
+            </li>
+            <li>
+              <a href="7.jpg" rel="external"><img src="7.jpg" /></a>
+            </li>
+            <li>
+              <a href="8.jpg" rel="external"><img src="8.jpg" /></a>
+            </li>
+            <li>
+              <a href="9.jpg" rel="external"><img src="9.jpg" /></a>
+            </li>
+            <li>
+              <a href="10.jpg" rel="external"><img src="10.jpg" /></a>
+            </li>
+            <li>
+              <a href="11.jpg" rel="external"><img src="11.jpg" /></a>
+            </li>
+          </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+          <h1>소프트웨어학과 2020575045 이은정</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
